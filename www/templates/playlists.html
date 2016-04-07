@@ -1,0 +1,13 @@
+<ion-view view-title="Milonga List">
+  <ion-content>
+
+    <div class="list" >
+      <a class="item item-avatar" href="#/app/playlists/{{playlist.id}}" ng-repeat="milonga in milongas">
+        <img ng-src="{{milonga.ImageUrl}}">
+        <h2>{{milonga.Name}}</h2>
+        <p>{{milonga.Description}}</p>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>
