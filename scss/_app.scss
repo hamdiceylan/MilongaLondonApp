@@ -1,0 +1,63 @@
+$light: lighten(#000, 5%);
+$accent: #CE0030;
+
+@mixin bg-gradient-t2b($start-colour, $end-colour) {
+    background-image:         linear-gradient(top, $start-colour 0%, $end-colour);
+}
+
+ion-content {
+	@include bg-gradient-t2b($light, $accent);
+	* {
+		background-color: transparent !important;
+	}
+	.item {
+		h2 {
+		color: #fff;
+		& + p {
+			color: darken(#fff,30%);
+		}
+		}
+		p {
+			color: #fff;
+		}
+	}
+	
+}
+
+a.subdued {
+    color: #F1A0A0;
+}
+
+.main {
+	.item {
+		border: 0;
+		margin: 20px;
+		background-color: rgba(255,255,255,0.05) !important;
+	}
+}
+
+.menu__list {
+	a {
+		color: #fff;
+		padding: 15px !important;
+	}
+	ion-item {
+		border: 0;
+		text-align: center;
+	}
+	hr.style {
+		width: 70%;
+		margin: 10px auto;
+		background: #ea5d60;
+	    background: -webkit-linear-gradient(left, rgba(234, 93, 96, 0.53) 0%, rgba(255, 255, 255, 0.52) 25%, white 50%, rgba(255, 255, 255, 0.48) 75%, rgba(234, 93, 96, 0.51) 100%);
+	    background: linear-gradient(to right, rgba(234, 93, 96, 0.53) 0%, rgba(255, 255, 255, 0.52) 25%, white 50%, rgba(255, 255, 255, 0.48) 75%, rgba(234, 93, 96, 0.51) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5d60', endColorstr='#ea5d60',GradientType=1 );
+	    border: 0;
+	    height: 1px;
+	}
+}
+
+.card {
+	background-color: rgba(255,255,255,0.25) !important;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
