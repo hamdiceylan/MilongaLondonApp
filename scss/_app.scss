@@ -1,4 +1,4 @@
-$light: lighten(#000, 5%);
+$light: #E28686;
 $accent: #CE0030;
 
 @mixin bg-gradient-t2b($start-colour, $end-colour) {
@@ -14,7 +14,7 @@ ion-content {
 		h2 {
 		color: #fff;
 		& + p {
-			color: darken(#fff,30%);
+			color: lighten(#F1A0A0, 10%);
 		}
 		}
 		p {
@@ -58,6 +58,6 @@ a.subdued {
 }
 
 .card {
-	background-color: rgba(255,255,255,0.25) !important;
+	background-color: rgba(255,255,255,0.15) !important;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }

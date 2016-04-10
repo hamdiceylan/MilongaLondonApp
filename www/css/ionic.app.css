@@ -9682,14 +9682,14 @@ a.button {
   transition-duration: 0s; }
 
 ion-content {
-  background-image: -webkit-linear-gradient(top, #0d0d0d 0%, #CE0030);
-  background-image: linear-gradient(top, #0d0d0d 0%, #CE0030); }
+  background-image: -webkit-linear-gradient(top, #E28686 0%, #CE0030);
+  background-image: linear-gradient(top, #E28686 0%, #CE0030); }
   ion-content * {
     background-color: transparent !important; }
   ion-content .item h2 {
     color: #fff; }
     ion-content .item h2 + p {
-      color: #b3b3b3; }
+      color: #f8cccc; }
   ion-content .item p {
     color: #fff; }
 
@@ -9720,5 +9720,5 @@ a.subdued {
   height: 1px; }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); }
